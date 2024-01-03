@@ -1,35 +1,56 @@
-// let proo= new Promise((res,rej)=>
-// {   
-//     if(res)
+// // let proo= new Promise((res,rej)=>
+// // {   
+// //     if(res)
+// //     {
+// //         setTimeout(()=>{
+// //             res('Done')
+// //         },1000)
+// //     }else
+// //     {
+// //         rej("Rejd")
+// //     }
+// // }) 
+
+// // async function xyz ()
+// // {
+// //     await proo
+// //     console.log("Barfu");
+// // }
+// // xyz()
+
+// let myPromise = new Promise((resolve,reject)=>
+// {
+
+//     if(true)
 //     {
-//         setTimeout(()=>{
-//             res('Done')
-//         },1000)
+//         resolve("Sheryayiiii")
 //     }else
 //     {
-//         rej("Rejd")
+//         reject("potti")
 //     }
-// }) 
-
-// async function xyz ()
+// })
+// myPromise.then((result)=>
 // {
-//     await proo
-//     console.log("Barfu");
-// }
-// xyz()
+//     console.log(result);
+// }).catch((error)=>console.log(error))
 
-let myPromise = new Promise((resolve,reject)=>
-{
 
-    if(true)
-    {
-        resolve("Sheryayiiii")
-    }else
-    {
-        reject("potti")
-    }
-})
-myPromise.then((result)=>
+
+async function func(a,b)
 {
+    let promise = new Promise((resolve,reject)=>
+    {
+        if(true)
+        {
+            resolve(a+b)
+        }else
+        {
+            let error = "S error"
+            reject(error)
+        } 
+    })
+    
+    let result =  await promise
     console.log(result);
-}).catch((error)=>console.log(error))
+}
+func(5,2)

@@ -1,52 +1,21 @@
-// // async function fSum(a,b)
-// // {
-// //     let sum = await sumA()
-// //     console.log(sum);
+// function disemvowel(str) {
+//     return str.split("").filter((data)=>{
+//         return !("aeiouAEIOU".includes(data))
+
+//     })
+//   }
+
+// let a = "This website is for losers LOL!" 
+// // "Ths wbst s fr lsrs LL!"
+// console.log(disemvowel(a))
+
+// // // assert.strictEqual(disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!")
+// // // assert.strictEqual(disemvowel("No offense but,\nYour writing is among the worst I've ever read"), "N ffns bt,\nYr wrtng s mng th wrst 'v vr rd")
+// // // assert.strictEqual(disemvowel("What are you, a communist?"), "Wht r y,  cmmnst?")
+
+// // function disemvowel(str) {
+// //     return str.split("").filter((char) =>  char.toLowerCase())
 // // }
-// // function sumA(a,b)
-// // {
-// //     return new Promise((resolve,reject)=>
-// //     {
-// //         if(true)
-// //         {
-// //             resolve(a+b)
-// //         }
-// //         else
-// //         {
-// //             reject(new Error("Error"))
-// //         }
-// //     })
-// // }
 
-
-// // fSum(2,3).then((result)=>
-// // {
-// //     console.log(result);
-// // })
-
-// const GITHUB_API = "https://api.github.com/users/salmanck66"
-// const user = fetch(GITHUB_API)
-// console.log(user);
-// user.then((data)=>
-// {
-//     console.log(data);
-// })
-
-
-// const {name:Rname,age} = myObj 
-// console.log(myObj);
-
-const ar  = [1,2,5,6,7]
-console.log(ar.map((item)=>item*2));
-console.log(ar.filter((item)=>item>2));
-console.log(ar.reduce((cval,ci)=>cval+ci));
-console.log("foreach");
-ar.forEach((item)=>console.log(item*2))
-console.log("foreach");
-console.log(ar.find((num)=>num>3));
-console.log(ar.sort((a,b)=>b-a));
-ar.push(9)
-ar.pop()
-ar.shift()
-ar.unshift()
-console.log(ar);
+// // let a = "This website is for losers LOL!";
+// // console.log(disemvowel(a));
